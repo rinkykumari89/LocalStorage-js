@@ -26,9 +26,8 @@ function retrieve(){
 
 }
 
-//function to retrieve scores
 
-/*-------- working only on refresh page -----------------------------
+/*-------- working only on refreshing page -----------------------------
 
 window.onload = function(){
     document.getElementById('scoreFormId').onclick = store(); 
