@@ -1,4 +1,4 @@
-//Function to store scores in LocalStorage
+//---Function to store scores in LocalStorage-------------------------------
 function store(){
     var correctAnswer = document.getElementById('correctAnswerId').value;
     var scoreKey = document.getElementById('scoreKeyId').value;
@@ -13,7 +13,7 @@ function store(){
 
 }
 
-//Fuction to retrieve score from LocalStorage
+//---Fuction to retrieve score from LocalStorage-------------------------------
 function retrieve(){
 
      var retrieveKey = document.getElementById('retrieveKeyId').value;
@@ -29,7 +29,7 @@ function retrieve(){
 
 }
 
-//Function to remove score from LocalStorage
+//-----Function to remove score from LocalStorage-------------------------------
 function remove(){
 
     var removeKey = document.getElementById('removeKeyId').value;
@@ -44,7 +44,7 @@ function remove(){
     element.appendChild(para);    
 }
 
-//Function to clear LocalStorage
+//-----Function to clear LocalStorage------------------------------------------------
 function clearLocal(){
     localStorage.clear();
 
