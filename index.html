@@ -4,20 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LocalStorage</title>
     
 </head>
 <body>
     <div class="formDiv">
-        <div class="scoreForm" id="scoreFormId">
-            <h1>Your Scores</h1><br>
-            <label for="correctAnswer">Correct Answer</label>&nbsp;
+        <form>
+            <h3>Store Scores in LocalStorage</h3><br>
+            <label for="correctAnswer">Correct Answer:</label>&nbsp;
             <input type="text" id="correctAnswerId" placeholder="No. of correct answer" required autofocus><br>
-            <label for="scoreKey">Score Key</label>&nbsp;
+            <label for="scoreKey">Score Key:</label>&nbsp;
             <input type="text" id= "scoreKeyId" placeholder="Enter 'score'" required autofocus><br>
-            <button type="button" onlclick="store()">Store Scores</button>
-        </div>
-
+            <button type="button" onclick="store();">Store Scores</button>
+        </form>
+        <br>
+            <h3>Retrieve Scores from LocalStorage</h3>
+            <label for="retrieveKey">Your score key:</label>
+            <input type="text" id="retrieveKeyId" placeholder="Enter your Key"required autofocus>
+            <button type="button" onclick="retrieve();">Get Score</button>
+        <br>
+        <br>
+            <div id="retrieveId"></div>
+        <br>
+            <h3>Remove Scores from LocalStorage</h3>
+            <label for="removeKey">Your Key:</label>
+            <input type="text" id="removeKeyId" placeholder="Enter your key" required autofocus>
+            <button type="button" onclick="remove();">Delete Score</button>
+        <br>
+        <br>
+            <div id="removeId"></div>
+        <br>
+            <h3>Clear LocalStorage</h3>
+            <label for="clearLocal">Clear Local</label>
+            <button type="button" onclick="clearLocal();">Clear Local</button>
+        <br>
+        <br>
+            <div id="clearId"></div>
+        <br>
     </div>
     
     <script type="text/javascript" src="main.js"></script>
