@@ -57,13 +57,4 @@ function clearLocal(){
     element.appendChild(para);
 }
 
-//function to retrieve scores
-
-/*-------- working only on refresh page -----------------------
-
-window.onload = function(){
-    document.getElementById('scoreFormId').onclick = store(); 
-}
-
---------------------------------------------------------------*/
 
