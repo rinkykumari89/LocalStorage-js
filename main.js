@@ -18,17 +18,48 @@ function retrieve(){
 
      var retrieveKey = document.getElementById('retrieveKeyId').value;
      var scoreRecords = JSON.parse(window.localStorage.getItem(retrieveKey));
-     var para = document.createElement("p");                     //created paragraph element
+
+    //created paragraph element
+     var para = document.createElement("p");                     
      var info = document.createTextNode("Your score is : \t"+ scoreRecords.totalScore);
-     para.appendChild(info);   
-     var element = document.getElementById('retrieveClass');  
+     para.appendChild(info); 
+
+     var element = document.getElementById('retrieveId');  
      element.appendChild(para); 
 
 }
 
+//Function to remove score from LocalStorage
+function remove(){
+
+    var removeKey = document.getElementById('removeKeyId').value;
+    localStorage.removeItem(removeKey);
+
+    //Created Paragraph element
+    var para = document.createElement("p");
+    var info = document.createTextNode("Score is Successfully deleted!");
+    para.appendChild(info);
+
+    var element = document.getElementById('removeId');
+    element.appendChild(para);    
+}
+
+//Function to clear LocalStorage
+function clearLocal(){
+    localStorage.clear();
+
+    //created Paragraph element
+    var para = document.createElement("p");
+    var info = document.createTextNode("Successfully cleared!");
+    para.appendChild(info);
+
+    var element = document.getElementById('clearId');
+    element.appendChild(para);
+}
+
 //function to retrieve scores
 
-/*-------- working only on refresh page -----------------------------
+/*-------- working only on refresh page -----------------------
 
 window.onload = function(){
     document.getElementById('scoreFormId').onclick = store(); 
