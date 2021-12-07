@@ -56,5 +56,3 @@ function clearLocal(){
     var element = document.getElementById('clearId');
     element.appendChild(para);
 }
-
-
